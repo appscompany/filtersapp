@@ -1,6 +1,7 @@
 (function () {
   //var _productGridSelector = '.grid-uniform.grid-link__container';
-  var _productGridElement = document.querySelectorAll(window._productGridSelector)[0];
+  var _productGridSelector = '.grid.grid--uniform';
+  var _productGridElement = document.querySelectorAll(_productGridSelector)[0];
   var _testButton = document.createElement('button');
   _testButton.id = 'testingbtn';
   _testButton.className = 'btn';
@@ -22,9 +23,9 @@
       if (!_request.readyState === 4 || !_request.status === 200) {
         return;
       }
-      var containerElement = document.querySelectorAll(window._productGridSelector)[0];
+      var containerElement = document.querySelectorAll(_productGridSelector)[0];
       containerElement.innerHTML = '';
-      var newContainer = _request.responseXML.querySelectorAll(window._productGridSelector)[0];
+      var newContainer = _request.responseXML.querySelectorAll(_productGridSelector)[0];
       containerElement.insertAdjacentHTML('beforeend', newContainer.innerHTML);
 
     }
