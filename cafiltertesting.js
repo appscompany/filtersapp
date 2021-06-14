@@ -22,9 +22,9 @@
       if (!_request.readyState === 4 || !_request.status === 200) {
         return;
       }
-      var containerElement = document.querySelectorAll(_productGridSelector)[0];
+      var containerElement = document.querySelectorAll(window._productGridSelector)[0];
       containerElement.innerHTML = '';
-      var newContainer = _request.responseXML.querySelectorAll(_productGridSelector)[0];
+      var newContainer = _request.responseXML.querySelectorAll(window._productGridSelector)[0];
       containerElement.insertAdjacentHTML('beforeend', newContainer.innerHTML);
 
     }
