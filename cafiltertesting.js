@@ -1,6 +1,6 @@
 (function () {
   //var _productGridSelector = '.grid-uniform.grid-link__container';
-  var _productGridSelector = '.grid.grid--uniform';
+  var _productGridSelector = '.product-loop.wrapper';
   var _productGridElement = document.querySelectorAll(_productGridSelector)[0];
   var _testButton = document.createElement('button');
   _testButton.id = 'testingbtn';
