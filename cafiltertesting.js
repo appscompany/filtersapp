@@ -6,7 +6,8 @@
   _testButton.id = 'testingbtn';
   _testButton.className = 'btn';
   _testButton.innerHTML = 'Test It';
-  var _header = document.querySelectorAll('header')[0];
+  //var _header = document.querySelectorAll('header')[0];
+  var _header = document.querySelectorAll('#section-header')[0];
   console.log(_header);
   if(_header != null)
   {
